@@ -1,4 +1,7 @@
 {
+  "redirects": [
+    { "source": "/qr", "destination": "/", "permanent": false }
+  ],
   "headers": [
     {
       "source": "/assets/img/(.*)",
