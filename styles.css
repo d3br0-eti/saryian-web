@@ -21,6 +21,7 @@
   --line:        rgba(237, 230, 214, .12);
   --line-strong: rgba(237, 230, 214, .28);
 
+  --tee:   "Alegreya SC", "Bodoni Moda", Georgia, serif;  /* letra tipo playera */
   --serif: "Bodoni Moda", "Bodoni 72", Didot, Georgia, serif;
   --sans:  "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   --mono:  "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
@@ -149,7 +150,7 @@ em { font-style: italic; }
   letter-spacing: -.01em;
   margin-top: 1.1rem;
 }
-.section-title em, .hero-title em, .manifesto-text em, .specs em {
+.section-title em, .manifesto-text em, .specs em {
   color: var(--amber);
   font-weight: 400;
 }
@@ -398,14 +399,30 @@ html:not(.js) .nav-toggle { display: none; }
   padding-top: clamp(.5rem, 3vh, 2rem);
 }
 .hero-head { display: grid; gap: 1rem; }
+/* Título en bloque, como el estampado: BUILT / in the / DARK */
 .hero-title {
-  font-family: var(--serif);
-  font-weight: 500;
-  font-size: clamp(3.1rem, 14vw, 8rem);
-  line-height: .92;
-  letter-spacing: -.015em;
-  max-width: 9ch;
-  text-shadow: 0 2px 30px rgba(0, 0, 0, .55);
+  display: flex; flex-direction: column; align-items: center;
+  width: fit-content;
+  font-family: var(--tee);
+  font-weight: 800;
+  font-size: clamp(3.4rem, 19vw, 7rem);
+  line-height: .9;
+  text-transform: uppercase;
+  color: #ede4cf;
+  /* relieve tipo puff + sombra para despegarlo de la foto */
+  text-shadow:
+    0 -1px 0 rgba(255, 255, 255, .4),
+    0 .025em 0 #a3967b,
+    0 .045em 0 #6f6552,
+    0 .12em .3em rgba(0, 0, 0, .75),
+    0 0 1.2em rgba(0, 0, 0, .45);
+}
+.ht-big { letter-spacing: .06em; margin-right: -.06em; }
+.ht-small {
+  font-size: .44em;
+  letter-spacing: .24em; margin-right: -.24em;
+  margin-block: .12em .16em;
+  color: var(--amber-2);
 }
 .hero-body { display: grid; gap: 1.4rem; }
 .hero-sub {
@@ -476,6 +493,7 @@ html:not(.js) .nav-toggle { display: none; }
   letter-spacing: .18em; text-transform: uppercase; color: var(--cream-2);
 }
 .marquee-sun { width: 26px; height: 26px; animation: spin 14s linear infinite; }
+.marquee-logo { height: clamp(1.7rem, 2.8vw, 2.3rem); width: auto; flex: none; }
 
 /* ---- Manifiesto ---- */
 .manifesto {
@@ -592,7 +610,7 @@ html:not(.js) .nav-toggle { display: none; }
 /* La palabra en "relieve": sombras que imitan el estampado puff */
 .detalle-word {
   margin-top: clamp(2rem, 5vw, 3.5rem);
-  font-family: var(--serif); font-weight: 700;
+  font-family: var(--tee); font-weight: 800;
   font-size: clamp(4.5rem, 13vw, 10rem); line-height: .9;
   letter-spacing: .04em; text-transform: uppercase;
   color: #e6dcc4;
@@ -873,7 +891,7 @@ html:not(.js) .nav-toggle { display: none; }
   }
   .hero-photo img { object-position: 50% 70%; }
   .hero-inner { justify-content: flex-end; gap: 1.6rem; }
-  .hero-title { font-size: clamp(4rem, 8.4vw, 8.2rem); }
+  .hero-title { font-size: clamp(4.2rem, 7.6vw, 8.4rem); }
   .hero-scrim {
     background:
       linear-gradient(90deg, rgba(11, 9, 7, .55) 0%, rgba(11, 9, 7, 0) 45%),
