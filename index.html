@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Saryian — Built in the Dark · Playera negra con envíos a todo México</title>
+  <meta name="description" content="Saryian: playera negra con letra en relieve y la frase Built in the Dark. Pedidos por Instagram y envíos a todo México.">
+  <meta name="theme-color" content="#0b0907">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Saryian — Built in the Dark">
+  <meta property="og:description" content="Playera negra con letra en relieve. Pedidos por Instagram, envíos a todo México.">
+  <meta property="og:locale" content="es_MX">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/favicon-180.png">
+
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@300..600&display=swap">
+
+  <link rel="preload" as="image" href="assets/img/hero.webp" media="(min-width: 960px) and (orientation: landscape)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/hero-mobile.webp" media="(max-width: 959px), (orientation: portrait)" fetchpriority="high">
+
+  <link rel="stylesheet" href="styles.css?v=20261106-2">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Pantalla de entrada (se oculta sola aunque falle el JS) -->
+  <div class="splash" data-splash aria-hidden="true">
+    <div class="splash-inner">
+      <span class="splash-glow"></span>
+      <img class="splash-emblem" src="assets/img/emblema.webp" alt="" width="640" height="640">
+      <img class="splash-logo" src="assets/img/logo-saryian.webp" alt="" width="612" height="149">
+    </div>
+  </div>
+
+  <!-- ===================== NAVEGACIÓN ===================== -->
+  <header class="nav" data-nav>
+    <a class="nav-brand" href="#inicio" aria-label="Saryian, ir al inicio">
+      <img class="nav-emblem" src="assets/img/emblema.webp" alt="" width="640" height="640">
+      <img class="nav-logo" src="assets/img/logo-saryian.webp" alt="Saryian" width="612" height="149">
+    </a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a href="#pieza">La pieza</a>
+      <a href="#detalle">El detalle</a>
+      <a href="#lookbook">En la calle</a>
+      <a href="#envios">Envíos</a>
+    </nav>
+    <a class="nav-cta" href="https://www.instagram.com/saryian__/" target="_blank" rel="noopener" data-ig>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-fill" cx="17.3" cy="6.7" r="1.1"/></svg>
+      Escríbenos
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+      <span class="nav-toggle-label">Menú</span>
+      <span class="nav-toggle-lines" aria-hidden="true"><span></span><span></span></span>
+    </button>
+  </header>
+
+  <!-- Menú móvil a pantalla completa -->
+  <div class="menu" id="menu" data-menu>
+    <nav class="menu-links" aria-label="Menú móvil">
+      <a href="#pieza"><span>01</span>La pieza</a>
+      <a href="#detalle"><span>02</span>El detalle</a>
+      <a href="#lookbook"><span>03</span>En la calle</a>
+      <a href="#envios"><span>04</span>Envíos</a>
+      <a href="#contacto"><span>05</span>Contacto</a>
+    </nav>
+    <div class="menu-foot">
+      <a class="btn btn-primary" href="https://www.instagram.com/saryian__/" target="_blank" rel="noopener" data-ig>Pídela por Instagram</a>
+      <p class="menu-social">
+        <a href="https://www.instagram.com/saryian__/" target="_blank" rel="noopener" data-ig>Instagram</a>
+        <a href="https://www.tiktok.com/@saryian__" target="_blank" rel="noopener" data-tt>TikTok</a>
+      </p>
+      <p class="menu-note"><span class="dot" aria-hidden="true"></span>Envíos a todo México</p>
+    </div>
+  </div>
+
+  <main id="contenido">
+
+    <!-- ===================== HERO · la luz que sigue al cursor ===================== -->
+    <section class="hero" id="inicio" data-spotlight>
+      <div class="hero-photo">
+        <picture>
+          <source media="(max-width: 959px), (orientation: portrait)" srcset="assets/img/hero-mobile.webp" width="1080" height="1440">
+          <img src="assets/img/hero.webp" width="1920" height="1331" fetchpriority="high" loading="eager" decoding="async"
+               alt="De espaldas, alguien camina de noche por una calle colonial bajo cientos de focos colgantes, con la playera Saryian que dice Built in the Dark.">
+        </picture>
+      </div>
+      <div class="hero-dark" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-head">
+          <p class="kicker">Saryian <span class="kicker-sep">—</span> Est. MMXXVI</p>
+          <h1 class="hero-title">Built in<br><em>the dark.</em></h1>
+        </div>
+        <div class="hero-body">
+          <p class="hero-sub">Playera negra con letra en relieve. Para lo que se construye en silencio, cuando nadie está viendo.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://www.instagram.com/saryian__/" target="_blank" rel="noopener" data-ig>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-fill" cx="17.3" cy="6.7" r="1.1"/></svg>
+              Pídela por Instagram
+            </a>
+            <a class="btn btn-ghost" href="#pieza">Ver la pieza</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <p class="hero-hint" aria-hidden="true">
+          <span class="hint-dot"></span>
+          <span class="hint-mouse">Mueve el cursor — enciende la calle</span>
+          <span class="hint-touch">Desliza el dedo — enciende la calle</span>
+        </p>
+        <p class="hero-ship"><span class="dot" aria-hidden="true"></span>Envíos a todo México</p>
+      </div>
+    </section>
+
+    <!-- ===================== CINTA ===================== -->
+    <div class="marquee" aria-label="Built in the dark. Envíos a todo México. Pedidos por mensaje directo en Instagram.">
+      <div class="marquee-track" aria-hidden="true">
+        <div class="marquee-group">
+          <span class="marquee-item">Built in the dark</span>
+          <img class="marquee-sun" src="assets/img/emblema.webp" alt="" width="640" height="640" loading="lazy">
+          <span class="marquee-item marquee-item--mono">Envíos a todo México</span>
+          <img class="marquee-sun" src="assets/img/emblema.webp" alt="" width="640" height="640" loading="lazy">
+          <span class="marquee-item">Saryian</span>
+          <img class="marquee-sun" src="assets/img/emblema.webp" alt="" width="640" height="640" loading="lazy">
+          <span class="marquee-item marquee-item--mono">Pedidos por DM · @saryian__</span>
+          <img class="marquee-sun" src="assets/img/emblema.webp" alt="" width="640" height="640" loading="lazy">
+          <span class="marquee-item">Est. 2026</span>
+          <img class="marquee-sun" src="assets/img/emblema.webp" alt="" width="640" height="640" loading="lazy">
+        </div>
+        <div class="marquee-group">
+          <span class="marquee-item">Built in the dark</span>
+          <img class="marquee-sun" src="assets/img/emblema.webp" alt="" width="640" height="640" loading="lazy">
+          <span class="marquee-item marquee-item--mono">Envíos a todo México</span>
+          <img class="marquee-sun" src="assets/img/emblema.webp" alt="" width="640" height="640" loading="lazy">
+          <span class="marquee-item">Saryian</span>
+          <img class="marquee-sun" src="assets/img/emblema.webp" alt="" width="640" height="640" loading="lazy">
+          <span class="marquee-item marquee-item--mono">Pedidos por DM · @saryian__</span>
+          <img class="marquee-sun" src="assets/img/emblema.webp" alt="" width="640" height="640" loading="lazy">
+          <span class="marquee-item">Est. 2026</span>
+          <img class="marquee-sun" src="assets/img/emblema.webp" alt="" width="640" height="640" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== MANIFIESTO ===================== -->
+    <section class="manifesto" id="manifiesto" aria-labelledby="manifiesto-titulo">
+      <img class="manifesto-sun" src="assets/img/sol-rayos.webp" alt="" width="900" height="900" loading="lazy" aria-hidden="true">
+      <div class="container manifesto-grid">
+        <p class="label" data-reveal><span class="label-num">01</span> Manifiesto</p>
+        <div>
+          <h2 class="sr-only" id="manifiesto-titulo">Manifiesto</h2>
+          <p class="manifesto-text" data-split="words">Las cosas que valen la pena casi nunca se hacen frente a todos. Se hacen tarde, con la luz apagada, sin aplausos. <em>Saryian</em> nace ahí: una playera negra para llevar puesto lo que todavía nadie ve.</p>
+          <p class="manifesto-sign" data-reveal>— Built in the dark</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LA PIEZA ===================== -->
+    <section class="pieza" id="pieza" aria-labelledby="pieza-titulo">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="label" data-reveal><span class="label-num">02</span> La pieza</p>
+            <h2 class="section-title" id="pieza-titulo" data-split="words">Una playera. <em>Dos caras.</em></h2>
+          </div>
+          <p class="section-intro" data-reveal>Negra de principio a fin. Al frente, el sol y el nombre, discretos. En la espalda, la frase que le da sentido a todo.</p>
+        </div>
+
+        <div class="pieza-grid">
+          <figure class="piece" data-tilt data-reveal>
+            <img src="assets/img/pieza-frente.webp" width="1000" height="1333" loading="lazy" decoding="async"
+                 alt="Frente de la playera negra Saryian colgada en un gancho: emblema del sol y logotipo al pecho.">
+            <figcaption>
+              <span class="piece-tag">Frente</span>
+              <span class="piece-note">Emblema del sol y logotipo SARYIAN al pecho.</span>
+            </figcaption>
+          </figure>
+          <figure class="piece" data-tilt data-reveal style="--delay:.12s">
+            <img src="assets/img/pieza-espalda.webp" width="1000" height="1333" loading="lazy" decoding="async"
+                 alt="Espalda de la playera negra Saryian con la frase Built in the Dark en letras claras.">
+            <figcaption>
+              <span class="piece-tag">Espalda</span>
+              <span class="piece-note">BUILT IN THE DARK en letra de relieve, tono hueso.</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <dl class="specs" data-reveal>
+          <div><dt>Color</dt><dd>Negro</dd></div>
+          <div><dt>Estampado</dt><dd>Relieve, tono hueso</dd></div>
+          <div><dt>Frente</dt><dd>Sol + Saryian</dd></div>
+          <div><dt>Espalda</dt><dd><em>Built in the dark</em></dd></div>
+          <div><dt>Tallas y precio</dt><dd>Pregúntanos por DM</dd></div>
+        </dl>
+
+        <a class="link-arrow" href="https://www.instagram.com/saryian__/" target="_blank" rel="noopener" data-ig data-reveal>
+          Pregunta por tu talla
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== EL DETALLE ===================== -->
+    <section class="detalle" id="detalle" aria-labelledby="detalle-titulo">
+      <div class="container detalle-grid">
+        <figure class="detalle-figure" data-reveal>
+          <img src="assets/img/detalle-relieve.webp" width="1080" height="1440" loading="lazy" decoding="async"
+               alt="Acercamiento a la espalda de la playera: las letras BUILT IN THE en relieve sobre la tela negra.">
+          <figcaption class="detalle-caption">Estampado en relieve · espalda</figcaption>
+        </figure>
+        <div class="detalle-copy">
+          <p class="label" data-reveal><span class="label-num">03</span> El detalle</p>
+          <h2 class="section-title" id="detalle-titulo" data-split="words">Se lee<br><em>con las manos.</em></h2>
+          <p class="section-intro" data-reveal>La frase de la espalda no está solo impresa: tiene volumen. Pasa los dedos y la sientes, letra por letra, sobre la tela negra.</p>
+          <p class="detalle-word" aria-hidden="true">Built</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LOOKBOOK ===================== -->
+    <section class="lookbook" id="lookbook" aria-labelledby="lookbook-titulo">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="label" data-reveal><span class="label-num">04</span> En la calle</p>
+            <h2 class="section-title" id="lookbook-titulo" data-split="words">De noche.<br><em>Y de día también.</em></h2>
+          </div>
+          <p class="section-intro" data-reveal>Hecha para la calle y para la luz que haya. Así se ve puesta.</p>
+        </div>
+
+        <div class="look-grid">
+          <figure class="look" data-reveal>
+            <div class="look-frame">
+              <img src="assets/img/look-noche.webp" width="1100" height="1467" loading="lazy" decoding="async"
+                   alt="Una chica de espaldas con la playera Saryian en una calle iluminada por focos colgantes, de noche.">
+            </div>
+            <figcaption><span>N° 01</span> Después de las diez</figcaption>
+          </figure>
+          <figure class="look" data-reveal style="--delay:.1s">
+            <div class="look-frame">
+              <img src="assets/img/look-espaldas.webp" width="960" height="1388" loading="lazy" decoding="async"
+                   alt="Dos chicos de espaldas frente a un muro de piedra, ambos con la playera Built in the Dark.">
+            </div>
+            <figcaption><span>N° 02</span> Espalda con espalda</figcaption>
+          </figure>
+          <figure class="look" data-reveal style="--delay:.2s">
+            <div class="look-frame">
+              <img src="assets/img/look-frente.webp" width="960" height="1280" loading="lazy" decoding="async"
+                   alt="Dos chicos con la playera Saryian: uno de frente sonriendo y otro de espaldas mostrando la frase.">
+            </div>
+            <figcaption><span>N° 03</span> De frente y de espaldas</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ENVÍOS ===================== -->
+    <section class="envios" id="envios" aria-labelledby="envios-titulo">
+      <div class="container envios-grid">
+        <div class="envios-copy">
+          <p class="label" data-reveal><span class="label-num">05</span> Envíos</p>
+          <h2 class="section-title" id="envios-titulo" data-split="words">A cualquier rincón <em>de México.</em></h2>
+          <p class="section-intro" data-reveal>Enviamos a todo el país. Tu playera sale doblada en su bolsa Saryian, lista para estrenar.</p>
+
+          <ol class="steps">
+            <li class="step" data-reveal>
+              <span class="step-num">01</span>
+              <div>
+                <h3>Escríbenos</h3>
+                <p>Mándanos un DM a <a href="https://www.instagram.com/saryian__/" target="_blank" rel="noopener" data-ig>@saryian__</a> con la talla que buscas.</p>
+              </div>
+            </li>
+            <li class="step" data-reveal style="--delay:.08s">
+              <span class="step-num">02</span>
+              <div>
+                <h3>Confirmamos</h3>
+                <p>Te damos disponibilidad, total y los datos para tu envío.</p>
+              </div>
+            </li>
+            <li class="step" data-reveal style="--delay:.16s">
+              <span class="step-num">03</span>
+              <div>
+                <h3>La recibes</h3>
+                <p>Sale empacada directo a tu puerta, estés donde estés.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <figure class="envios-figure" data-reveal>
+          <img src="assets/img/envio-empaque.webp" width="1000" height="1227" loading="lazy" decoding="async"
+               alt="Playeras empacadas en bolsas translúcidas con el emblema y el logotipo de Saryian y el usuario @Saryian__.">
+          <figcaption class="envios-badge"><span class="dot" aria-hidden="true"></span>Envíos a todo México</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="contacto" id="contacto" aria-labelledby="contacto-titulo" data-light>
+      <div class="contacto-glow" aria-hidden="true"></div>
+      <img class="contacto-sun" src="assets/img/sol-rayos.webp" alt="" width="900" height="900" loading="lazy" aria-hidden="true">
+      <div class="container contacto-inner">
+        <p class="label" data-reveal><span class="label-num">06</span> Contacto</p>
+        <h2 class="section-title" id="contacto-titulo" data-split="words">Escríbenos. <em>Síguenos.</em></h2>
+        <p class="section-intro" data-reveal>Pedidos, tallas y dudas por mensaje directo en Instagram. También estamos en TikTok.</p>
+
+        <a class="ig-handle" href="https://www.instagram.com/saryian__/" target="_blank" rel="noopener" data-ig data-reveal>@saryian__</a>
+
+        <ul class="contact-list" data-reveal>
+          <!-- Para añadir otra forma de contacto (WhatsApp, correo…),
+               copia este <li> completo, pégalo debajo y cambia el enlace y los textos. -->
+          <li>
+            <a href="https://www.instagram.com/saryian__/" target="_blank" rel="noopener" data-ig>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-fill" cx="17.3" cy="6.7" r="1.1"/></svg>
+              <span class="contact-name">Instagram</span>
+              <span class="contact-detail">@saryian__ · pedidos por DM</span>
+              <svg class="icon contact-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@saryian__" target="_blank" rel="noopener" data-tt>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3.5v12a4.5 4.5 0 1 1-4.5-4.5"/><path d="M14 3.5c.5 3 2.6 5 5.5 5.2"/></svg>
+              <span class="contact-name">TikTok</span>
+              <span class="contact-detail">@saryian__ · síguenos</span>
+              <svg class="icon contact-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== PIE ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/img/logo-saryian.webp" alt="Saryian" width="612" height="149" loading="lazy">
+          <p>Built in the dark. Est. 2026.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Pie de página">
+          <a href="#pieza">La pieza</a>
+          <a href="#detalle">El detalle</a>
+          <a href="#lookbook">En la calle</a>
+          <a href="#envios">Envíos</a>
+        </nav>
+        <div class="footer-contact">
+          <p class="footer-label">Pedidos</p>
+          <a href="https://www.instagram.com/saryian__/" target="_blank" rel="noopener" data-ig>Instagram · @saryian__</a>
+          <p class="footer-label">Síguenos</p>
+          <a href="https://www.tiktok.com/@saryian__" target="_blank" rel="noopener" data-tt>TikTok · @saryian__</a>
+          <p class="footer-label">Envíos</p>
+          <p>A todo México</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Saryian. Todos los derechos reservados.</p>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante: aparece al bajar del hero -->
+  <a class="float-cta" href="https://www.instagram.com/saryian__/" target="_blank" rel="noopener" data-ig data-float-cta>
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-fill" cx="17.3" cy="6.7" r="1.1"/></svg>
+    Pedir por DM
+  </a>
+
+  <script defer src="lib/gsap.min.js?v=20261106-2"></script>
+  <script defer src="lib/ScrollTrigger.min.js?v=20261106-2"></script>
+  <script defer src="lib/manifest.js?v=20261106-2"></script>
+  <script defer src="main.js?v=20261106-2"></script>
+</body>
+</html>
