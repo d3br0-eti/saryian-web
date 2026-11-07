@@ -405,7 +405,7 @@ html:not(.js) .nav-toggle { display: none; }
   width: fit-content;
   font-family: var(--tee);
   font-weight: 800;
-  font-size: clamp(3.4rem, 19vw, 7rem);
+  font-size: clamp(2.8rem, 14.5vw, 6.4rem);
   line-height: .9;
   text-transform: uppercase;
   color: #ede4cf;
